@@ -6,6 +6,13 @@
     position: relative
     padding-top: 32px
     padding-bottom: 26px
+  &.sticky
+    position: fixed
+    left: 0
+    top: 0
+    width: 100%
+    background-color: rgba(#fff, .9)
+    z-index: 1000
 
 .topline-links
   text-align: right
@@ -19,6 +26,8 @@
     margin-left: 75px
     align-items: center
     color: $text
+    position: relative
+    z-index: 1
     &:hover
       color: $accent-green
       .svg
@@ -73,23 +82,15 @@
   margin-top: 20px
 
 
-.main-mnu-wrap
-  &.active
-    background-color: $accent-green
-    .hamburger-wrap
-      background-color: #fff
-      color: $text
-    .hamburger-btn, .hamburger-btn:before, .hamburger-btn:after
-      background-color: $text
-    .main-mnu
-      top: 100%
+
 
 .main-mnu
   position: absolute
   left: 0
   top: -1000%
   width: 100%
-  min-height: calc(100vh - 400px)
+  min-height: calc(100vh - 170px)
+  background-color: #fff
   &>ul
     padding: 35px 0 60px
     position: relative
@@ -111,7 +112,7 @@
       position: absolute
       left: 100%
       top: 0
-      background-color: red
+      background-color: #fff
       width: 425px
       border: 1px solid #d7d7d7
       opacity: 0
@@ -131,6 +132,42 @@
           top: calc(50% - 8px)
           left: 60px
           border-radius: 50%
+
+
+
+//mmenu customization start
+.mm-menu_theme-dark
+  background-color: $accent-green
+  text-transform: uppercase
+
+.mm-logo
+  display: block
+  margin: 0 auto
+  transform: scaleY(.51)
+
+.mm-navbars_top
+  border-color: transparent
+
+.mm-listitem, .mm-listitem .mm-btn_next, .mm-listitem .mm-btn_next:before, .mm-listitem:after, .mm-listview
+  border-color: rgba(#fff, .3)
+
+.mm-listitem
+  a
+    padding-top: 14px
+    padding-bottom: 12px
+
+.mm-navbar
+  border: none
+
+
+.mm-menu_theme-dark .mm-navbar a, .mm-menu_theme-dark .mm-navbar>*
+  font-size: 20px
+  color: #fff
+  letter-spacing: 2px
+
+.mm-menu_theme-dark .mm-listview a:not(.mm-btn_next)
+  color: #fff
+//mmenu customization end
 
 
 

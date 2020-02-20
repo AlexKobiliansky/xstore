@@ -28,12 +28,51 @@
 
 <body>
 <div id="page-container">
+	<!-- mobile-mnu -->
+	<nav id="mobile-mnu" data-logo="img/logo.png">
+		<ul>
+			<li><a href="#0">Логотип</a></li>
+			<li>
+				<a href="#0">Полиграфия</a>
+				<ul>
+					<li><a href="#0">Полиграфия торговой точки</a></li>
+					<li><a href="#0">Визитки</a></li>
+					<li><a href="#0">Фирменный бланк</a></li>
+					<li><a href="#0">Фирменный бланк</a></li>
+				</ul>
+			</li>
+			<li><a href="#0">Фирменные шрифты</a></li>
+			<li><a href="#0">Сувенирная продукция</a></li>
+			<li><a href="#0">Социальные сети</a></li>
+			<li><a href="#0">Иконки/паттерны</a></li>
+			<li><a href="#0">Шаблоны макетов</a></li>
+			<li><a href="#0">Наружная реклама</a></li>
+			<li>
+				<a href="#0">Цветовые коды</a>
+				<ul>
+					<li><a href="#0">Полиграфия торговой точки</a></li>
+					<li><a href="#0">Визитки</a></li>
+					<li><a href="#0">Фирменный бланк</a></li>
+					<li><a href="#0">Фирменный бланк</a></li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+	<!-- mobile-mnu -->
+
 	<!-- ======= HEADER START ======= -->
 	<header class="main-head">
 		<div class="mnu-line">
 			<div class="container">
 				<div class="main-mnu-wrap">
-					<div class="hamburger-wrap">
+					<div class="hamburger-wrap d-flex d-lg-none" id="mmenu-btn">
+						<div class="hamburger">
+							<span class="hamburger-btn"></span>
+							<span class="hamburger-label">меню</span>
+						</div>
+					</div>
+
+					<div class="hamburger-wrap d-none d-lg-flex" id="mnu-btn">
 						<div class="hamburger">
 							<span class="hamburger-btn"></span>
 							<span class="hamburger-label">меню</span>
@@ -58,14 +97,22 @@
 							<li><a href="#0">Иконки/паттерны</a></li>
 							<li><a href="#0">Шаблоны макетов</a></li>
 							<li><a href="#0">Наружная реклама</a></li>
-							<li><a href="#0">Цветовые коды</a></li>
+							<li>
+								<a href="#0">Цветовые коды</a>
+								<ul>
+									<li><a href="#0">Полиграфия торговой точки</a></li>
+									<li><a href="#0">Визитки</a></li>
+									<li><a href="#0">Фирменный бланк</a></li>
+									<li><a href="#0">Фирменный бланк</a></li>
+								</ul>
+							</li>
 						</ul>
 					</nav>
 				</div>
 
 				<div class="topline-links">
-					<a href="#0"><img src="img/icons/mnu-icon-1.svg" alt="alt" class="svg">Версия для печати</a>
-					<a href="#0"><img src="img/icons/mnu-icon-2.svg" alt="alt" class="svg">Личный кабинет</a>
+					<a href="#0"><img src="img/icons/mnu-icon-1.svg" alt="alt" class="svg"><span>Версия для печати</span></a>
+					<a href="#0"><img src="img/icons/mnu-icon-2.svg" alt="alt" class="svg"><span>Личный кабинет</span></a>
 				</div>
 			</div>
 		</div>
@@ -85,6 +132,8 @@
 	<!-- ======= SECTION INTRO START ======= -->
 	<section class="s-intro" style="background-image: url('img/bg-intro.jpg');">
 		<div class="container">
+			<img src="img/intro-decor-1.png" alt="alt" class="intro-decor intro-decor-1">
+			<img src="img/intro-decor-2.png" alt="alt" class="intro-decor intro-decor-2">
 			<div class="intro-wrap">
 				<div class="intro-label">§ Интро</div>
 				<div class="intro-content">
@@ -102,10 +151,11 @@
 			<div class="fashion-wrap">
 				<div class="fashion-content">
 					<h2>Образ и характер <br>бренда</h2>
+					<img src="img/fashion-img.png" alt="alt" class="img-responsive d-block d-lg-none">
 					<p>Мы уважаем мнение каждого покупателя, своих коллег и своих партнеров. Диалог строится на равных, доступно и открыто. Не рекламная манипуляция, но идея, отражающая важные для реальных людей вещи – так ценность транслируется в наших коммуникациях.</p>
 					<p>Мы искренне рады людям, разделяющему нашу веру в то, что можно быть осознанным человеком в любой ситуации, сохраняя свою позицию. Мы признаем возможность быть собой, говорим о том, что важно для каждого. Наши покупатели не слепо следуют моде, а выбирают гаджет по душе. Осознанные покупки наших покупателей – это внешнее подтверждение выбранной позиции. </p>
 				</div>
-				<img src="img/fashion-img.png" alt="alt" class="img-responsive">
+				<img src="img/fashion-img.png" alt="alt" class="img-responsive d-none d-lg-block">
 			</div>
 			<img src="img/fashion-img-big.jpg" alt="alt" class="fashion-img img-responsive">
 		</div>

@@ -5,15 +5,125 @@
 
 // ≥1200px
 +media-breakpoint-down(lg)
+  body
+    font-size: 18px
+  h2
+    font-size: 28px
+
+  .mnu-line
+    font-size: 16px
+
+  .topline-links
+    a
+      margin-left: 40px
+    .svg
+      height: 30px
+
+  .hamburger-btn, .hamburger-btn:after, .hamburger-btn:before
+    width: 40px
+    height: 3px
+  .hamburger-btn:before
+    top: -8px
+  .hamburger-btn:after
+    bottom: -8px
+  .hamburger-label
+    font-size: 14px
+    margin-top: 14px
+
+  .hamburger-wrap
+    width: 120px
+    height: 120px
+
+  .fashion-content
+    width: 60%
+
+  .fashion-wrap
+    img
+      width: 40%
+      top: 0
+
+  .s-first
+    &.spaced
+      padding-top: 91px
 
 // ≥992px
 +media-breakpoint-down(md)
 
+  .main-mnu
+    display: none!important
+
+  .s-fashion
+    padding: 70px 0
+
+  .fashion-content
+    width: 100%
+
+  .fashion-wrap
+    img
+      max-width: 400px
+      margin-left: auto
+      margin-right: auto
+      width: 100%
+      margin-bottom: 30px
+
+  .intro-decor-1
+    left: -100px
+
+  .intro-label
+    width: 180px
+    height: 180px
+    font-size: 34px
+
+  .intro-content
+    width: calc(100% - 230px)
+
+  .intro-wrap
+    padding-left: 0
+    h3
+      font-size: 24px
+
+
 // ≥768px
 +media-breakpoint-down(sm)
 
+  .intro-content
+    width: 100%
+
+  .intro-label
+    display: none
+
+  .intro-decor
+    display: none
+
+  .first-wrap
+    padding: 80px 0
+
+  .topline-links
+    a
+      margin-left: 30px
+      span
+        display: none
+
 // ≥480px
 +media-breakpoint-down(xs)
+  .main-mnu-wrap
+    width: 100%
+
+
+@media (max-width: 390px)
+
+  .intro-wrap
+    padding: 60px 0
+
+  h2
+    font-size: 24px
+
+  body
+    font-size: 16px
+
+  .intro-wrap
+    h3
+      font-size: 20px
 
 
 /*==========  Mobile First  ==========*/
@@ -26,6 +136,30 @@
 
 // ≤992px
 +media-breakpoint-up(lg)
+  .main-mnu-wrap
+    &.active
+      background-color: $accent-green
+      z-index: 1001
+      .hamburger-wrap
+        background-color: #fff
+        color: $text
+      .hamburger-btn, .hamburger-btn:before, .hamburger-btn:after
+        background-color: $text
+      .main-mnu
+        top: 100%
+
+  #page-container
+    &.active
+      &:before
+        display: block
+        z-index: 1000
+      .mnu-line
+        background-color: rgba(#fff, .9)
+        z-index: 1001
+        position: fixed
+        left: 0
+        top: 0
+        width: 100%
 
 // ≤1200px
 +media-breakpoint-up(xl)
