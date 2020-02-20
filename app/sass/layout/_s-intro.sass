@@ -1,0 +1,41 @@
+.s-intro
+  +bg-cover
+  position: relative
+  color: #fff
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    background-color: rgba($accent-green, .6)
+  .container
+    position: relative
+    z-index: 1
+
+.intro-wrap
+  padding: 75px 0 60px 138px
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+.intro-label
+  width: 235px
+  height: 235px
+  display: flex
+  justify-content: center
+  align-items: center
+  border-radius: 50%
+  background-color: #fff
+  color: $text
+  font-size: 46px
+  span
+    font-size: 47px
+
+.intro-content
+  width: calc(100% - 315px)
+  h3
+    font-size: 29px
+    font-weight: 600
+    margin-bottom: 22px
