@@ -6,6 +6,9 @@
 // ≥1200px
 +media-breakpoint-down(lg)
 
+  .logo-download
+    font-size: 20px
+
   .s-audience
     h2
       margin-bottom: 30px
@@ -62,6 +65,15 @@
 // ≥992px
 +media-breakpoint-down(md)
 
+  .logo-wrap
+    flex-direction: column
+    &>div
+      width: 100%
+
+  .logo-download
+    margin-top: 30px
+    text-align: center
+
   .graph-item
     &-desc
       padding-left: 10px
@@ -110,6 +122,14 @@
 // ≥768px
 +media-breakpoint-down(sm)
 
+  .s-logo
+    padding: 50px 0
+    h2
+      margin-bottom: 30px
+
+  .logo-img
+    margin-bottom: 40px
+
   .graphs-wrap
     flex-direction: column
     margin-bottom: 0
@@ -148,6 +168,11 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .download-link
+    width: 46px
+    height: 46px
+    font-size: 14px
 
   .graph-item
     &-desc
