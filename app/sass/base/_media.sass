@@ -6,6 +6,13 @@
 // ≥1200px
 +media-breakpoint-down(lg)
 
+  .tabs-container
+    margin-left: 0
+    margin-right: 0
+
+  .tabs-content
+    padding: 50px 80px
+
   .monochrome-content
     width: 60%
     padding-right: 30px
@@ -78,6 +85,18 @@
 
 // ≥992px
 +media-breakpoint-down(md)
+
+  .tabs-controls a
+    font-size: 14px
+    padding: 10px 18px
+
+  .tab-item
+    width: calc(33.33333% - 30px)
+    margin-right: 45px
+
+  .tabs-content
+    padding: 30px 40px
+
 
   .s-monochrome
     padding-top: 50px
@@ -215,6 +234,25 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .s-monochrome
+    padding-bottom: 165px
+
+  .tab-content-inner
+    flex-direction: column
+
+  .tab-item
+    width: 100%
+    margin-right: 0
+    margin-bottom: 60px
+
+  .tabs-controls
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+    a
+      border-bottom: none
+      border-right: none
 
   .monos-container
     flex-wrap: wrap

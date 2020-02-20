@@ -50,6 +50,8 @@ $(document).ready(function(){
         console.log('cliked')
     });
 
+    $('.tabs-container').tabs();
+
 
 
 

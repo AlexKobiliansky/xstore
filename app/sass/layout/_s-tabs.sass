@@ -1,0 +1,41 @@
+.tabs-container
+  margin-left: 95px
+  margin-right: 95px
+  position: relative
+  top: -105px
+  background-color: #fff
+  border-bottom: 9px solid #e8e8e8
+  box-shadow: 0 30px 20px -20px rgba(#000, .25)
+
+.tabs-controls
+  font-size: 0
+  li
+    display: inline-block
+    &:last-child
+      a
+        border-right-color: transparent
+    &.ui-tabs-active
+      a
+        background-color: #f1f1f1
+        border-right-color: transparent
+
+  a
+    display: inline-block
+    font-size: 19px
+    color: #5e5e5e
+    line-height: 1
+    padding: 14px 30px
+    border-right: 1px solid #c6c6c6
+    border-bottom: 1px solid #c6c6c6
+
+.tabs-content
+  padding: 75px 165px
+
+.tab-content-inner
+  display: flex
+
+.tab-item
+  width: calc(33.33333% - 50px)
+  margin-right: 75px
+  &:nth-child(3n)
+    margin-right: 0
