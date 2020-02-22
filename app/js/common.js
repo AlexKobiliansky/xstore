@@ -50,7 +50,8 @@ $(document).ready(function(){
         console.log('cliked')
     });
 
-    $('.tabs-container').tabs();
+    $('.tabs-container-1').tabs();
+    $('.tabs-container-2').tabs();
 
 
     $('.slider-1').owlCarousel({
