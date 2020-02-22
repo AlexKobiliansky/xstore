@@ -108,6 +108,8 @@ $(document).ready(function(){
         }, 'xml');
     });
 
+    $('.stylistic-item').photoswipe();
+
     //E-mail Ajax Send
     $("form").submit(function() { //Change
         var th = $(this);

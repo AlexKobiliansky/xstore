@@ -6,6 +6,10 @@
 // ≥1200px
 +media-breakpoint-down(lg)
 
+  .stylistics-wrap
+    padding-left: 100px
+    padding-right: 100px
+
   .colors-wrap
     flex-direction: column
 
@@ -118,6 +122,10 @@
 // ≥992px
 +media-breakpoint-down(md)
 
+  .stylistic-item
+    width: calc(50% - 35px)
+    margin-bottom: 50px
+
   .slider-2-wrap
     padding-left: 34px
     padding-right: 34px
@@ -229,6 +237,10 @@
 // ≥768px
 +media-breakpoint-down(sm)
 
+  .stylistics-wrap
+    padding-left: 0
+    padding-right: 0
+
   .colors-items-wrap
     justify-content: space-between
 
@@ -314,6 +326,9 @@
 // ≥480px
 +media-breakpoint-down(xs)
 
+  .stylistic-item
+    width: calc(50% - 10px)
+
   .colors-items-wrap
     margin-bottom: 40px
 
@@ -378,6 +393,13 @@
 
 
 @media (max-width: 390px)
+
+  .stylistic-container
+    h2
+      margin-bottom: 25px
+
+  .stylistic-item
+    width: 100%
 
   .color-item
     width: 100%
