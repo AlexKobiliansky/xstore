@@ -6,6 +6,13 @@
 // ≥1200px
 +media-breakpoint-down(lg)
 
+  .slider-2
+    .owl-dots
+      margin-top: 30px
+    &-wrap
+      padding-left: 90px
+      padding-right: 90px
+
   .super-wrap
     padding: 0
 
@@ -100,6 +107,17 @@
 
 // ≥992px
 +media-breakpoint-down(md)
+
+  .slider-2-wrap
+    padding-left: 34px
+    padding-right: 34px
+
+  .slider-2
+    .owl-nav
+      button.owl-prev
+        left: -34px
+      button.owl-next
+        right: -34px
 
   .slider-1
     margin-bottom: 100px
@@ -340,7 +358,7 @@
   .slider-1-wrap
     padding-bottom: 50px
 
-  .slider-1
+  .owl-carousel
     .owl-nav
       top: calc(50% - 40px)
       button.owl-prev
@@ -352,6 +370,17 @@
         width: 20px
         height: 20px
         margin: 0 5px
+
+  .slider-2
+    .owl-nav
+      button.owl-prev
+        left: -12px
+      button.owl-next
+        right: -12px
+    &-wrap
+      padding-left: 0
+      padding-right: 0
+
 
   .intro-wrap
     padding: 60px 0

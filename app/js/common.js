@@ -63,6 +63,16 @@ $(document).ready(function(){
         navText: ["",""],
     });
 
+    $('.slider-2').owlCarousel({
+        loop:true,
+        nav: true,
+        items: 1,
+        margin: 15,
+        dots: true,
+        autoHeight: true,
+        navText: ["",""],
+    });
+
 
 
 
