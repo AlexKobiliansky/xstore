@@ -1,0 +1,32 @@
+.s-insta
+  padding-top: 42px
+
+.insta-circle
+  width: 82px
+  height: 82px
+  border-radius: 50%
+  background-color: $accent-red
+  display: flex
+  justify-content: center
+  align-items: center
+  position: relative
+  margin-bottom: 30px
+  &:before, &:after
+    content: ''
+    position: absolute
+    background-color: $accent-red
+    border-radius: 50%
+  &:before
+    width: 11px
+    height: 11px
+    right: -20px
+    top: -16px
+  &:after
+    width: 23px
+    height: 23px
+    right: -35px
+    top: 7px
+
+.insta-title
+  font-size: 21px
+  margin-bottom: 35px
