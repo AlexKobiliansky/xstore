@@ -6,6 +6,16 @@
 // ≥1200px
 +media-breakpoint-down(lg)
 
+  .colors-wrap
+    flex-direction: column
+
+  .colors-content
+    width: 100%
+    margin-bottom: 50px
+
+  .colors-container
+    width: 100%
+
   .slider-2
     .owl-dots
       margin-top: 30px
@@ -219,6 +229,13 @@
 // ≥768px
 +media-breakpoint-down(sm)
 
+  .colors-items-wrap
+    justify-content: space-between
+
+  .color-item
+    margin-right: 0
+    width: calc(50% - 25px)
+
   .super-wrap
     flex-direction: column
   .super-content
@@ -297,7 +314,21 @@
 // ≥480px
 +media-breakpoint-down(xs)
 
+  .colors-items-wrap
+    margin-bottom: 40px
 
+  .color-item
+    font-size: 14px
+    width: calc(50% - 10px)
+    margin-bottom: 30px
+    &-color
+      width: 50px
+      height: 50px
+    &-desc
+      width: calc(100% - 58px)
+
+  //  margin-right: 0
+  //  width: 100%
 
   .slider-1
     .owl-nav
@@ -347,6 +378,15 @@
 
 
 @media (max-width: 390px)
+
+  .color-item
+    width: 100%
+    font-size: 16px
+    &-color
+      width: 100px
+      height: 100px
+    &-desc
+      width: calc(100% - 108px)
 
   .super-label
     width: 200px
