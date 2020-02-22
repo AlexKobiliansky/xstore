@@ -6,6 +6,10 @@
 // ≥1200px
 +media-breakpoint-down(lg)
 
+  .slider-1-wrap
+    padding-left: 0
+    padding-right: 0
+
   .tabs-container
     margin-left: 0
     margin-right: 0
@@ -85,6 +89,15 @@
 
 // ≥992px
 +media-breakpoint-down(md)
+
+  .slider-1
+    margin-bottom: 100px
+
+  .tagline
+    &-img
+      width: 250px
+    &-content
+      width: calc(100% - 280px)
 
   .tabs-controls a
     font-size: 14px
@@ -177,6 +190,14 @@
 // ≥768px
 +media-breakpoint-down(sm)
 
+  .tagline
+    &-wrap
+      flex-direction: column
+      &>div
+        width: 100%
+    &-img
+      margin-bottom: 30px
+
   .guards-wrap
     flex-direction: column
 
@@ -235,6 +256,16 @@
 // ≥480px
 +media-breakpoint-down(xs)
 
+  .slider-1
+    .owl-nav
+      top: calc(50% - 45px)
+
+  .owl-carousel
+    .owl-nav
+      button.owl-prev, button.owl-next
+        width: 17px
+        height: 30px
+
   .s-monochrome
     padding-bottom: 165px
 
@@ -273,6 +304,22 @@
 
 
 @media (max-width: 390px)
+
+  .slider-1-wrap
+    padding-bottom: 50px
+
+  .slider-1
+    .owl-nav
+      top: calc(50% - 40px)
+      button.owl-prev
+        left: 10px
+      button.owl-next
+        right: 10px
+    .owl-dots
+      button.owl-dot
+        width: 20px
+        height: 20px
+        margin: 0 5px
 
   .intro-wrap
     padding: 60px 0

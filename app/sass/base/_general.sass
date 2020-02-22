@@ -96,4 +96,41 @@ h2
   font-size: 19px
   margin-left: 5px
 
+.owl-carousel
+  position: relative
+  .owl-nav
+    position: absolute
+    width: 100%
+    left: 0
+    top: calc(50% - 30px)
+    button.owl-prev, button.owl-next
+      width: 34px
+      height: 60px
+      +bg-cover
+      background-image: url('../img/icons/arrow-slider-light.png')
+      position: absolute
+      +mt(.3s)
+      opacity: .5
+      &:hover
+        opacity: .8
+    button.owl-prev
+      transform: rotate(180deg)
+      left: 22px
+    button.owl-next
+      right: 22px
+  .owl-dots
+    position: relative
+    margin-top: 30px
+    text-align: center
+    button.owl-dot
+      width: 30px
+      height: 30px
+      border: 1px solid $accent-dark
+      border-radius: 50%
+      display: inline-block
+      margin: 0 15px
+  .owl-item
+    img
+      width: auto
+
 

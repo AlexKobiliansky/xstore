@@ -53,6 +53,17 @@ $(document).ready(function(){
     $('.tabs-container').tabs();
 
 
+    $('.slider-1').owlCarousel({
+        loop:true,
+        nav: true,
+        items: 1,
+        margin: 15,
+        dots: true,
+        autoHeight: true,
+        navText: ["",""],
+    });
+
+
 
 
     $('img.svg').each(function(){
