@@ -1,0 +1,45 @@
+.s-supersign
+  background-color: $accent-green
+  padding: 40px 0 65px
+
+.super-wrap
+  padding-left: 95px
+  padding-right: 45px
+  display: flex
+  align-items: center
+  justify-content: space-between
+
+.super-label
+  width: 345px
+  height: 345px
+  background-color: #fff
+  border-radius: 50%
+  display: flex
+  justify-content: center
+  align-items: center
+  padding: 50px
+  font-size: 37px
+  font-weight: 600
+  position: relative
+  &:before
+    content: ''
+    position: absolute
+    width: 70px
+    height: 70px
+    border-radius: 50%
+    background-color: #fff
+    right: -60px
+    top: -35px
+  &:after
+    content: ''
+    position: absolute
+    width: 30px
+    height: 30px
+    border-radius: 50%
+    background-color: #fff
+    right: -30px
+    top: 70px
+
+.super-content
+  width: calc(100% - 465px)
+  color: #fff

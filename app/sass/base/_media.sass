@@ -6,6 +6,17 @@
 // ≥1200px
 +media-breakpoint-down(lg)
 
+  .super-wrap
+    padding: 0
+
+  .super-label
+    width: 300px
+    height: 300px
+    font-size: 28px
+
+  .super-content
+    width: calc(100% - 420px)
+
   .slider-1-wrap
     padding-left: 0
     padding-right: 0
@@ -190,6 +201,18 @@
 // ≥768px
 +media-breakpoint-down(sm)
 
+  .super-wrap
+    flex-direction: column
+  .super-content
+    width: 100%
+    margin-top: 30px
+
+  .super-label
+    width: 250px
+    height: 250px
+    padding: 40px
+    font-size: 24px
+
   .tagline
     &-wrap
       flex-direction: column
@@ -256,6 +279,8 @@
 // ≥480px
 +media-breakpoint-down(xs)
 
+
+
   .slider-1
     .owl-nav
       top: calc(50% - 45px)
@@ -304,6 +329,13 @@
 
 
 @media (max-width: 390px)
+
+  .super-label
+    width: 200px
+    height: 200px
+    padding: 40px
+    font-size: 18px
+    margin-right: auto
 
   .slider-1-wrap
     padding-bottom: 50px
