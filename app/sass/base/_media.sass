@@ -136,6 +136,18 @@
 // ≥992px
 +media-breakpoint-down(md)
 
+  .typography-wrap
+    &>div
+      width: 100%
+      margin-bottom: 30px
+      &:last-child
+        margin-bottom: 0
+
+  .typography-right
+    img
+      top: 0
+      margin-right: auto
+
   .branding-img
     width: calc(50% - 15px)
 
@@ -350,6 +362,20 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .s-typography
+    padding: 40px 0
+
+  .typography-left
+    padding-right: 0
+
+  .t-load-item-link
+    width: 40px
+    height: 40px
+    padding: 11px
+
+  .s-typography
+    font-size: 16px
 
   .branding-images-wrap
     flex-wrap: wrap
