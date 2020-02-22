@@ -4,12 +4,25 @@
 /*==========  Desktop First  ==========*/
 
 @media (max-width: 1400px)
+
+  .heads-circle
+    left: 380px
+
   .socials-decor
     max-width: 1000px
     left: 15px
 
 // ≥1200px
 +media-breakpoint-down(lg)
+
+  .heads-circle
+    display: none
+
+  .heads-content
+    width: 50%
+    padding-top: 0
+  .heads-img
+    width: 50%
 
   .socials-circle
     display: none
@@ -182,6 +195,22 @@
 
 // ≥992px
 +media-breakpoint-down(md)
+
+  .s-heads
+    font-size: 18px
+
+  .heads-wrap
+    padding-top: 50px
+    flex-direction: column
+
+  .heads-content
+    width: 100%
+    padding-right: 0
+    p
+      margin-bottom: 25px
+
+  .heads-img
+    width: 100%
 
   .s-socials
     .container
@@ -436,6 +465,22 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .heads-slider
+    .owl-nav
+      top: calc(50% - 15px)!important
+      button.owl-prev
+        left: 0!important
+      button.owl-next
+        right: 0!important
+
+  .s-heads
+    font-size: 16px
+
+  .download-link
+    img
+      width: 18px
+      height: auto
 
   .socials-content
     font-size: 16px
