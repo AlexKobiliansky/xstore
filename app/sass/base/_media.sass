@@ -5,6 +5,9 @@
 
 @media (max-width: 1400px)
 
+  .prices-img
+    max-width: 1000px
+
   .heads-circle
     left: 380px
 
@@ -14,6 +17,20 @@
 
 // ≥1200px
 +media-breakpoint-down(lg)
+
+  .s-prices
+    padding-top: 60px
+    h2
+      font-size: 28px
+      margin-bottom: 50px
+
+  .prices-content
+    width: 50%
+    padding-top: 0
+
+  .prices-img
+    right: 0
+    max-width: 70%
 
   .poly-label
     margin-left: 0
@@ -208,6 +225,14 @@
 
 // ≥992px
 +media-breakpoint-down(md)
+
+  .prices-img
+    position: relative
+    max-width: 100%
+    margin-top: 50px
+
+  .prices-content
+    width: 100%
 
   .avatars-wrap
     flex-wrap: wrap
@@ -648,6 +673,16 @@
 
 
 @media (max-width: 390px)
+
+  .s-prices
+    font-size: 16px
+    h2
+      font-size: 24px
+
+  .prices-img
+    max-width: calc(100% + 100px)
+    right: auto
+    left: -100px
 
   .visuals-slider
     .owl-nav
