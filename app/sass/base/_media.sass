@@ -18,6 +18,26 @@
 // ≥1200px
 +media-breakpoint-down(lg)
 
+  .bonuses-bottom
+    .container
+      padding: 90px 0
+
+  .bonuses-bottom-par
+    width: 70%
+
+  .bonuses-bottom-img
+    max-width: 70%
+
+  .bonuses-top-circle
+    display: none
+
+  .bonuses-top-desc
+    padding-top: 125px
+
+  .bonuses-top-par
+    width: 200px
+    right: -50px
+
   .s-prices
     padding-top: 60px
     h2
@@ -226,6 +246,20 @@
 // ≥992px
 +media-breakpoint-down(md)
 
+  .bonuses-bottom
+    .container
+      padding-bottom: 40px
+
+  .bonuses-bottom-par
+    right: 0
+
+  .bonuses-top-desc
+    font-size: 20px
+    padding-left: 50px
+
+  .s-prices
+    padding-bottom: 70px
+
   .prices-img
     position: relative
     max-width: 100%
@@ -419,6 +453,20 @@
 // ≥768px
 +media-breakpoint-down(sm)
 
+  .bonuses-top
+    .container
+      flex-direction: column-reverse
+      flex-wrap: wrap
+    &-desc
+      width: 100%
+      margin-bottom: 50px
+      padding-top: 0
+      text-align: center
+      padding-left: 0
+    &-img
+      width: 100%
+
+
   .poly-label
     width: 240px
     height: 240px
@@ -526,6 +574,9 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .bonuses-top-par
+    right: 0
 
   .poly-label
     &:after
@@ -673,6 +724,9 @@
 
 
 @media (max-width: 390px)
+
+  .bonuses-top-par
+    width: 100px
 
   .s-prices
     font-size: 16px

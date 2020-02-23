@@ -1,0 +1,67 @@
+.bonuses-top
+  padding: 50px 0 25px
+  background-color: #e8e8e8
+  .container
+    display: flex
+    justify-content: space-between
+
+.bonuses-top-img
+  width: 50%
+  position: relative
+  .img
+    max-width: 560px
+    width: 100%
+
+.bonuses-top-par
+  position: absolute
+  bottom: 20px
+  right: 0
+
+
+.bonuses-top-desc
+  width: 50%
+  padding-top: 200px
+  font-size: 31px
+  font-weight: 600
+  padding-left: 100px
+  position: relative
+
+.bonuses-top-circle
+  width: 80px
+  height: 80px
+  background-color: $accent-red
+  border-radius: 50%
+  position: absolute
+  top: 55px
+  left: -55px
+  &:before
+    content: ''
+    position: absolute
+    width: 23px
+    height: 23px
+    border-radius: 50%
+    background-color: $accent-red
+    top: -32px
+    right: -12px
+
+.bonuses-bottom
+  .container
+    position: relative
+    padding: 155px 0 135px
+    z-index: 2
+  &-img
+    max-width: 950px
+
+.bonuses-bottom-circle
+  width: 52px
+  height: 52px
+  border-radius: 50%
+  background-color: $accent-green
+  position: absolute
+  left: 32px
+  top: -32px
+
+.bonuses-bottom-par
+  position: absolute
+  top: -200px
+  right: 105px
