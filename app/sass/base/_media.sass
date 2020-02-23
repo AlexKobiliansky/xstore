@@ -15,6 +15,16 @@
 // ≥1200px
 +media-breakpoint-down(lg)
 
+  .s-avatars
+    padding: 50px 0
+
+  .avatars-wrap
+    width: 100%
+    margin-bottom: 60px
+
+  .avatars-download
+    width: auto
+
   .heads-circle
     display: none
 
@@ -196,6 +206,15 @@
 // ≥992px
 +media-breakpoint-down(md)
 
+  .avatars-wrap
+    flex-wrap: wrap
+    justify-content: space-between
+    margin-bottom: 0
+
+  .avatar-item
+    width: calc(50% - 20px)
+    margin-bottom: 40px
+
   .s-heads
     font-size: 18px
 
@@ -372,7 +391,15 @@
 // ≥768px
 +media-breakpoint-down(sm)
 
-  .branding-items
+  .s-avatars
+    font-size: 18px
+
+  .avatar-item
+    &-img
+      width: 90px
+      margin-right: 20px
+    &-desc
+      width: calc(100% - 20px)
 
   .s-tabs-2 .tabs-container
     margin-bottom: -100px
@@ -465,6 +492,13 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .s-avatars
+    font-size: 16px
+
+  .avatar-item
+    width: 100%
+    margin-right: 0
 
   .insta-title
     font-size: 16px
