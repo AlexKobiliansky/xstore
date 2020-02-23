@@ -5,6 +5,11 @@
 
 @media (max-width: 1400px)
 
+  .uni-img
+    max-width: calc(100% - 570px)
+    width: 100%
+    right: 0
+
   .prices-img
     max-width: 1000px
 
@@ -17,6 +22,17 @@
 
 // ≥1200px
 +media-breakpoint-down(lg)
+
+  .main-foot
+    height: 100px
+
+  .uni-label
+    margin-left: 0
+
+  .uni-img
+    max-width: 100%
+    width: 500px
+
 
   .bonuses-bottom
     .container
@@ -246,6 +262,14 @@
 // ≥992px
 +media-breakpoint-down(md)
 
+  .uni-label
+    width: 240px
+    height: 240px
+    font-size: 24px
+
+  .uni-img
+    width: 400px
+
   .bonuses-bottom
     .container
       padding-bottom: 40px
@@ -453,6 +477,21 @@
 // ≥768px
 +media-breakpoint-down(sm)
 
+  .uni-label
+    margin-left: auto
+    margin-right: auto
+    margin-bottom: 30px
+
+  .s-uni
+    height: 600px
+
+  .uni-img
+    position: relative
+    top: 0
+    margin-left: auto
+    margin-right: auto
+    display: block
+
   .bonuses-top
     .container
       flex-direction: column-reverse
@@ -574,6 +613,10 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .uni-label
+    &:after, &:before
+      display: none 
 
   .bonuses-top-par
     right: 0
