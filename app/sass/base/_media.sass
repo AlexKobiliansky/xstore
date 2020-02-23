@@ -5,6 +5,58 @@
 
 @media (max-width: 1400px)
 
+  .mnu-line
+    font-size: 16px
+    .container
+      padding-top: 18px
+      padding-bottom: 18px
+
+  .topline-links .svg
+    height: 30px
+
+  .hamburger-btn, .hamburger-btn:after, .hamburger-btn:before
+    height: 3px
+    width: 40px
+
+  .hamburger-btn:before
+    top: -8px
+
+  .hamburger-btn:after
+    bottom: -8px
+
+  .hamburger-label
+    font-size: 15px
+    margin-top: 13px
+
+  .hamburger-wrap
+    width: 100px
+    height: 100px
+
+  .main-mnu-wrap
+    height: 130px
+
+  .main-mnu>ul
+    padding: 15px 0 25px
+
+  .main-mnu>ul>li a
+    font-size: 18px
+    padding: 8px 8px 8px 70px
+
+  .main-mnu>ul ul a:before
+    left: 42px
+
+  .main-mnu>ul ul
+    padding-top: 15px
+    padding-bottom: 15px
+
+  .main-mnu
+    min-height: calc(100vh - 130px)
+
+  #page-container
+    &.active.spaced
+      padding-top: 69px
+
+
   .uni-img
     max-width: calc(100% - 570px)
     width: 100%
@@ -19,6 +71,8 @@
   .socials-decor
     max-width: 1000px
     left: 15px
+
+
 
 // ≥1200px
 +media-breakpoint-down(lg)
@@ -262,6 +316,14 @@
 // ≥992px
 +media-breakpoint-down(md)
 
+  .tabs-container-1
+    .tabs-controls-wrap
+      flex-wrap: wrap
+      span
+        width: 100%
+        text-align: center
+        margin-bottom: 10px
+
   .uni-label
     width: 240px
     height: 240px
@@ -477,6 +539,13 @@
 // ≥768px
 +media-breakpoint-down(sm)
 
+  .tabs-container-1
+    .tabs-controls-wrap
+      span
+        font-size: 18px
+        padding-top: 5px
+        padding-bottom: 5px
+
   .uni-label
     margin-left: auto
     margin-right: auto
@@ -616,7 +685,7 @@
 
   .uni-label
     &:after, &:before
-      display: none 
+      display: none
 
   .bonuses-top-par
     right: 0

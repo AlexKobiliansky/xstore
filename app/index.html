@@ -27,6 +27,22 @@
 </head>
 
 <body>
+<!-- preloader -->
+<div class="preloader">
+	<div class="sk-cube-grid">
+		<div class="sk-cube sk-cube-1"></div>
+		<div class="sk-cube sk-cube-2"></div>
+		<div class="sk-cube sk-cube-3"></div>
+		<div class="sk-cube sk-cube-4"></div>
+		<div class="sk-cube sk-cube-5"></div>
+		<div class="sk-cube sk-cube-6"></div>
+		<div class="sk-cube sk-cube-7"></div>
+		<div class="sk-cube sk-cube-8"></div>
+		<div class="sk-cube sk-cube-9"></div>
+	</div>
+</div>
+<!-- preloader -->
+
 <div id="page-container">
 	<!-- mobile-mnu -->
 	<nav id="mobile-mnu" data-logo="img/logo.png">
@@ -81,12 +97,12 @@
 
 					<nav class="main-mnu">
 						<ul>
-							<li><a href="#0">Логотип</a></li>
+							<li><a href="#s-logo">Логотип</a></li>
 							<li>
 								<a href="#0">Полиграфия</a>
 								<ul>
-									<li><a href="#0">Полиграфия торговой точки</a></li>
-									<li><a href="#0">Визитки</a></li>
+									<li><a href="#s-poly">Полиграфия торговой точки</a></li>
+									<li><a href="#s-prices">Визитки</a></li>
 									<li><a href="#0">Фирменный бланк</a></li>
 									<li><a href="#0">Фирменный бланк</a></li>
 								</ul>
@@ -120,7 +136,7 @@
 	<!-- ======= HEADER END ======= -->
 
 	<!-- ======= SECTION FIRST START ======= -->
-	<section class="s-first">
+	<section class="s-first" id="s-first">
 		<div class="container">
 			<div class="first-wrap">
 				<img src="img/first-img.png" alt="alt" class="img-responsive">
@@ -130,7 +146,7 @@
 	<!-- ======= SECTION FIRST END ======= -->
 
 	<!-- ======= SECTION INTRO START ======= -->
-	<section class="s-intro" style="background-image: url('img/bg-intro.jpg');">
+	<section class="s-intro" style="background-image: url('img/bg-intro.jpg');" id="s-intro">
 		<div class="container">
 			<img src="img/intro-decor-1.png" alt="alt" class="intro-decor intro-decor-1">
 			<img src="img/intro-decor-2.png" alt="alt" class="intro-decor intro-decor-2">
@@ -146,7 +162,7 @@
 	<!-- ======= SECTION INTRO END ======= -->
 
 	<!-- ======= SECTION FASHION START ======= -->
-	<section class="s-fashion">
+	<section class="s-fashion" id="s-fashion">
 		<div class="container">
 			<div class="fashion-wrap">
 				<div class="fashion-content">
@@ -163,7 +179,7 @@
 	<!-- ======= SECTION FASHION END ======= -->
 
 	<!-- ======= SECTION AUDIENCE START ======= -->
-	<section class="s-audience">
+	<section class="s-audience" id="s-audience">
 		<div class="container">
 			<h2>Аудитория</h2>
 			<div class="graphs-wrap">
@@ -215,7 +231,7 @@
 	<!-- ======= SECTION AUDIENCE END ======= -->
 
 	<!-- ======= SECTION LOGO START ======= -->
-	<section class="s-logo">
+	<section class="s-logo" id="s-logo">
 		<div class="container">
 			<h2>Логотип</h2>
 			<img src="img/logo-img.png" alt="alt" class="img-responsive logo-img">
@@ -233,7 +249,7 @@
 	<!-- ======= SECTION LOGO END ======= -->
 
 	<!-- ======= SECTION GUARDS START ======= -->
-	<section class="s-guards">
+	<section class="s-guards" id="s-quards">
 		<div class="container">
 			<div class="guards-wrap">
 				<div class="guards-content">
@@ -251,7 +267,7 @@
 	<!-- ======= SECTION GUARDS END ======= -->
 
 	<!-- ======= SECTION MONOCHROME START ======= -->
-	<section class="s-monochrome">
+	<section class="s-monochrome" id="s-monochrome">
 		<div class="container">
 			<div class="monochrome-wrap">
 				<div class="monochrome-content">
@@ -274,27 +290,24 @@
 	<!-- ======= SECTION MONOCHROME END ======= -->
 
 	<!-- ======= SECTION TABS START ======= -->
-	<section class="s-tabs s-tabs-1">
+	<section class="s-tabs s-tabs-1" id="s-tabs-1">
 		<div class="container">
-			<div class="tabs-container tabs-container-2">
-				<ul class="tabs-controls">
-					<li><a href="#tab-1-1">Запрещено</a></li>
-					<li><a href="#tab-1-2">Основные требования</a></li>
-					<li><a href="#tab-1-3">Использование в цветных фонах</a></li>
-				</ul>
+			<div class="tabs-container tabs-container-1">
+				<div class="tabs-controls-wrap">
+					<span>Запрещено</span>
+					<ul class="tabs-controls">
+						<li><a href="#tab-1-1">Основные требования</a></li>
+						<li><a href="#tab-1-2">Использование в цветных фонах</a></li>
+					</ul>
+				</div>
+
 				<div class="tabs-content">
 					<div class="tab-content-inner" id="tab-1-1">
-						<img src="img/tab-img-1.png" alt="alt" class="tab-item img-responsive">
-						<img src="img/tab-img-2.png" alt="alt" class="tab-item img-responsive">
-						<img src="img/tab-img-3.png" alt="alt" class="tab-item img-responsive">
+						<img src="img/tabs-img-1.jpg" alt="alt" class="img-responsive">
 					</div>
 
 					<div class="tab" id="tab-1-2">
-						2
-					</div>
-
-					<div class="tab" id="tab-1-3">
-						3
+						<img src="img/tabs-img-2.jpg" alt="alt" class="img-responsive">
 					</div>
 				</div>
 			</div>
@@ -303,7 +316,7 @@
 	<!-- ======= SECTION TABS END ======= -->
 
 	<!-- ======= SECTION SLIDER-1 START ======= -->
-	<section class="s-slider-1">
+	<section class="s-slider-1" id="s-slider-1">
 		<div class="container">
 			<div class="slider-1-wrap">
 				<div class="slider-1 owl-carousel">
@@ -354,7 +367,7 @@
 	<!-- ======= SECTION SLIDER-1 END ======= -->
 
 	<!-- ======= SECTION SUPERSIGN START ======= -->
-	<section class="s-supersign">
+	<section class="s-supersign" id="s-supersign">
 		<div class="container">
 			<div class="super-wrap">
 				<div class="super-label">Супер знак и его история</div>
@@ -365,7 +378,7 @@
 	<!-- ======= SECTION SUPERSIGN END ======= -->
 
 	<!-- ======= SECTION SLIDER-2 START ======= -->
-	<section class="s-slider-2">
+	<section class="s-slider-2" id="s-slider-2">
 		<div class="container">
 			<div class="slider-2-wrap">
 				<div class="slider-2 owl-carousel">
@@ -399,7 +412,7 @@
 	<!-- ======= SECTION SLIDER-2 END ======= -->
 
 	<!-- ======= SECTION COLORS START ======= -->
-	<section class="s-colors">
+	<section class="s-colors" id="s-colors">
 		<div class="container">
 			<h2>Цвет</h2>
 			<div class="colors-wrap">
@@ -504,7 +517,7 @@
 	<!-- ======= SECTION COLORS END ======= -->
 
 	<!-- ======= SECTION STYLISTIC START ======= -->
-	<section class="s-stylistic">
+	<section class="s-stylistic" id="s-stylistic">
 		<div class="container">
 			<h2>Стилистика макетов</h2>
 			<p>Все макеты можно разделить на две категории, каждая из которых использует определенные стороны существующей стилистики</p>
@@ -556,7 +569,7 @@
 	<!-- ======= SECTION STYLISTIC END ======= -->
 
 	<!-- ======= SECTION TABS START ======= -->
-	<section class="s-tabs s-tabs-2">
+	<section class="s-tabs s-tabs-2" id="s-tabs-2">
 		<div class="container">
 			<div class="tabs-container tabs-container-2">
 				<ul class="tabs-controls">
@@ -598,7 +611,7 @@
 	<!-- ======= SECTION TABS END ======= -->
 
 	<!-- ======= SECTION BRANDING START ======= -->
-	<section class="s-branding">
+	<section class="s-branding" id="s-branding">
 		<div class="container">
 			<h2>Ко-брендинг</h2>
 			<p>Размещение логотипов в партнерстве с другими брендами должно быть равным, а расстояние между ними соответствовать указанным интервальным отступам. Приоритет отдаётся варианту «X».  В случае ограниченного места на носителе используется вариант «Y».</p>
@@ -647,7 +660,7 @@
 	<!-- ======= SECTION BRANDING END ======= -->
 
 	<!-- ======= SECTION TYPOGRAPHY START ======= -->
-	<section class="s-typography">
+	<section class="s-typography" id="s-typography">
 		<div class="container">
 			<h2>Типографика</h2>
 			<div class="typography-wrap">
@@ -675,7 +688,7 @@
 	<!-- ======= SECTION TYPOGRAPHY END ======= -->
 
 	<!-- ======= SECTION ICONS START ======= -->
-	<section class="s-icons">
+	<section class="s-icons" id="s-icons">
 		<div class="container">
 			<div class="section-icons-wrap">
 				<div class="section-icons-left">
@@ -718,7 +731,7 @@
 	<!-- ======= SECTION ICONS END ======= -->
 
 	<!-- ======= SECTION VISUALS START ======= -->
-	<section class="s-visuals">
+	<section class="s-visuals" id="s-visuals">
 		<div class="container">
 			<h2>Визуальные образы</h2>
 			
@@ -756,7 +769,7 @@
 	<!-- ======= SECTION VISUALS END ======= -->
 
 	<!-- ======= SECTION SOCIALS START ======= -->
-	<section class="s-socials">
+	<section class="s-socials" id="s-socials">
 		<div class="container">
 			<div class="socials-circle"></div>
 			<img src="img/socials-decor.png" alt="alt" class="socials-decor">
@@ -769,7 +782,7 @@
 	<!-- ======= SECTION SOCIALS END ======= -->
 
 	<!-- ======= SECTION HEADS START ======= -->
-	<section class="s-heads">
+	<section class="s-heads" id="s-heads">
 		<div class="container">
 			<div class="heads-wrap">
 				<div class="heads-circle"><img src="img/icons/vk-icon.png" alt="alt"></div>
@@ -803,7 +816,7 @@
 	<!-- ======= SECTION HEADS END ======= -->
 
 	<!-- ======= SECTION INSTA START ======= -->
-	<section class="s-insta">
+	<section class="s-insta" id="s-insta">
 		<div class="container">
 			<div class="insta-circle"><img src="img/icons/insta-icon.png" alt="alt"></div>
 			<div class="insta-title">Посты сообщества instagram</div>
@@ -813,7 +826,7 @@
 	<!-- ======= SECTION INSTA END ======= -->
 
 	<!-- ======= SECTION AVATARS START ======= -->
-	<section class="s-avatars">
+	<section class="s-avatars" id="s-avatars">
 		<div class="container">
 			<div class="avatars-wrap">
 				<!-- avatar-item -->
@@ -845,7 +858,7 @@
 	<!-- ======= SECTION AVATARS END ======= -->
 
 	<!-- ======= SECTION POLY START ======= -->
-	<section class="s-poly">
+	<section class="s-poly" id="s-poly">
 		<div class="container">
 			<div class="poly-label">Полиграфия торговой точки</div>
 		</div>
@@ -853,7 +866,7 @@
 	<!-- ======= SECTION POLY END ======= -->
 
 	<!-- ======= SECTION PRICES START ======= -->
-	<section class="s-prices">
+	<section class="s-prices" id="s-prices">
 		<div class="container">
 			<div class="prices-content">
 				<h2>Оформление ценников</h2>
@@ -875,7 +888,7 @@
 	<!-- ======= SECTION PRICES END ======= -->
 
 	<!-- ======= SECTION BONUSES START ======= -->
-	<section class="s-bonuses">
+	<section class="s-bonuses" id="s-bonuses">
 		<div class="bonuses-top">
 			<div class="container">
 				<div class="bonuses-top-img">
@@ -910,7 +923,7 @@
 	<!-- ======= SECTION BONUSES END ======= -->
 
 	<!-- ======= SECTION UNI START ======= -->
-	<section class="s-uni">
+	<section class="s-uni" id="s-uni">
 		<div class="container">
 			<div class="uni-label">Униформа <br> продавцов</div>
 			<img src="img/uni-img.png" alt="alt" class="uni-img">
