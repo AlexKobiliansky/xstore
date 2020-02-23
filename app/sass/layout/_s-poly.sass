@@ -1,0 +1,34 @@
+.s-poly
+  background-image: url('../img/bg-poly.jpg')
+  +bg-cover
+  padding: 75px 0 40px
+
+.poly-label
+  position: relative
+  width: 340px
+  height: 340px
+  border-radius: 50%
+  background-color: #fff
+  font-size: 31px
+  margin-left: 90px
+  display: flex
+  justify-content: center
+  align-items: center
+  padding-left: 55px
+  padding-right: 10px
+  font-weight: 600
+  &:before, &:after
+    content: ''
+    position: absolute
+    background-color: #fff
+    border-radius: 50%
+  &:before
+    width: 70px
+    height: 70px
+    top: -16px
+    right: -45px
+  &:after
+    width: 30px
+    height: 30px
+    top: 52px
+    right: -110px
