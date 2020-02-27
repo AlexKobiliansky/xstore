@@ -683,6 +683,13 @@
 // ≥480px
 +media-breakpoint-down(xs)
 
+  #totop
+    width: 40px
+    height: 40px
+    background-size: 25px 12px
+    right: 10px
+    bottom: 10px
+
   .uni-label
     &:after, &:before
       display: none
@@ -936,19 +943,23 @@
     &.active
       background-color: $accent-green
       z-index: 1001
+      transition-delay: .4s
       .hamburger-wrap
         background-color: #fff
         color: $text
+        transition-delay: 0s
       .hamburger-btn, .hamburger-btn:before, .hamburger-btn:after
         background-color: $text
       .main-mnu
         top: 100%
+        transition-delay: .3s
 
   #page-container
     &.active
       &:before
         display: block
         z-index: 1000
+        opacity: 1
       .mnu-line
         background-color: rgba(#fff, .9)
         z-index: 1001

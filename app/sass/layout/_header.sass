@@ -12,7 +12,7 @@
     top: 0
     width: 100%
     background-color: rgba(#fff, .9)
-    z-index: 1000
+    z-index: 999
 
 .topline-links
   text-align: right
@@ -41,6 +41,8 @@
   background-color: transparent
   left: 0
   top: 0
+  +mt(.3s)
+  z-index: 2
 
 .hamburger-wrap
   width: 155px
@@ -51,6 +53,9 @@
   justify-content: center
   align-items: center
   color: #fff
+  +mt(.5s)
+  position: relative
+  z-index: 2
 
 .hamburger-btn
   position: relative
@@ -69,6 +74,7 @@
   width: 54px
   height: 5px
   background-color: #fff
+  +mt(.5s)
 
 .hamburger
   display: flex
@@ -85,6 +91,8 @@
 
 
 .main-mnu
+  +mt(.3s)
+  transition-delay: .3s
   position: absolute
   left: 0
   top: -1000%

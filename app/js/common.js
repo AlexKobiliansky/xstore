@@ -54,6 +54,12 @@ $(document).ready(function(){
         $('#page-container').toggleClass('active');
     });
 
+    $('.close-mnu-realm').click(function(){
+        console.log('clicked');
+        $('.main-mnu-wrap').removeClass('active');
+        $('#page-container').removeClass('active');
+    });
+
     $('.tabs-container-1').tabs();
     $('.tabs-container-2').tabs();
 
@@ -136,6 +142,14 @@ $(document).ready(function(){
     $('.preloader').fadeOut();
 
     $('.stylistic-item').photoswipe();
+
+    $(".tagline-img").twentytwenty();
+
+
+
+
+
+
 
 
 
@@ -292,4 +306,38 @@ $(document).ready(function(){
 
     }).call(this);
     /** end PARALLAX */
+
+
+
+
+    /**
+     * toTop functionality start
+     */
+    $(window).scroll(function() {
+        if($(this).scrollTop() > 1000) {
+            $('#totop').css('opacity', '1');
+            $('#totop').css('pointer-events', 'initial');
+        } else {
+            $('#totop').css('opacity', '0');
+            $('#totop').css('pointer-events', 'none');
+        }
+    });
+
+    $('body').bind('touchmove', function (e)
+    {
+        if($(this).scrollTop() > 1000) {
+            $('#totop').css('opacity', '1');
+            $('#totop').css('pointer-events', 'initial');
+        } else {
+            $('#totop').css('opacity', '0');
+            $('#totop').css('pointer-events', 'none');
+        }
+    });
+
+    $('#totop').click(function() {
+        $('body,html').animate({scrollTop:0},600);
+    });
+    /**
+     * toTop functionality end
+     */
 });

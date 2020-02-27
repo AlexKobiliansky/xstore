@@ -10,8 +10,10 @@
 .monos-container
   margin-top: 27px
   display: flex
+  align-items: flex-start
   img
     width: 50%
+    height: auto
 
 .monochrome-content
   width: 920px
@@ -23,5 +25,9 @@
   .download-link
     color: #fff
     background-color: #c6c6c6
+    &:hover
+      background-color: darken(#c6c6c6, 10%)
     &:last-child
       background-color: #000
+      &:hover
+        background-color: lighten(#000, 30%)

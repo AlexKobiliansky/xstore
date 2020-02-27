@@ -18,9 +18,15 @@
     .download-link
       background-color: $accent-red
       margin-left: 20px
+      position: relative
+      z-index: 2
+      &:hover
+        background-color: darken($accent-red, 15%)
     &:last-child
       .download-link
         background-color: $accent-green
+        &:hover
+          background-color: darken($accent-green, 10%)
 .prices-img
   position: absolute
   top: 0

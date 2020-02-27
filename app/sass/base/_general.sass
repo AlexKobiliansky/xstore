@@ -79,9 +79,20 @@ p
     width: 100%
     height: 100%
     background-color: rgba(#000, .35)
-    display: none
+    //display: none
+    +mt(.3s)
+    z-index: -1
+    opacity: 0
   &.active.spaced
     padding-top: 102px
+  &.active
+    .close-mnu-realm
+      position: absolute
+      width: 100%
+      height: 100%
+      left: 0
+      top: 0
+      z-index: 1000
 
 
 h2
@@ -206,5 +217,25 @@ h2
   align-items: center
   background-color: #e8e8e8
 //end PRELOADER
+
+
+#totop
+  width: 60px
+  height: 60px
+  background-color: $accent-green
+  border-radius: 50%
+  position: fixed
+  right: 40px
+  bottom: 40px
+  background-image: url('../img/icons/arrow-white.svg')
+  background-repeat: no-repeat
+  background-position: center center
+  z-index: 3
+  background-size: 36px 18px
+  transform: rotate(180deg)
+  cursor: pointer
+  +mt(.3s)
+  &:hover
+    background-color: darken($accent-green, 10%)
 
 
