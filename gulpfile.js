@@ -47,6 +47,8 @@ gulp.task('scripts', function() {
 		'app/libs/photoswipe/jquery.photoswipe.js',
 		'app/libs/twenty-twenty/js/jquery.event.move.js',
 		'app/libs/twenty-twenty/js/jquery.twentytwenty.js',
+		'app/libs/parallax/parallax.min.js',
+		'app/libs/wow/wow.min.js',
 		'app/js/common.js', // Always at the end
 		])
 	.pipe(concat('scripts.min.js'))

@@ -12,11 +12,6 @@
 
   p
     margin-bottom: 45px
-  img
-    display: block
-    width: auto
-    max-width: 100%
-    margin-bottom: 45px
 
 .colors-container
   width: calc(100% - 490px)
@@ -42,3 +37,28 @@
     margin-right: 8px
   &-desc
     width: calc(100% - 108px)
+
+.colors-img-1
+  margin-bottom: 45px
+  img
+    display: inline-block
+    max-width: 33.33333%
+
+.colors-img-2
+  margin-bottom: -100px
+  img
+    display: inline-block
+    margin-right: 15px
+
+.colors-img-double
+  position: relative
+  z-index: 5
+  &:nth-child(2)
+    z-index: 4
+    top: -40px
+  &:nth-child(3)
+    z-index: 3
+    top: -80px
+  &:nth-child(4)
+    z-index: 2
+    top: -120px

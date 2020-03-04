@@ -64,6 +64,10 @@ $(document).ready(function(){
     $('.tabs-container-2').tabs();
 
 
+    $('.s-intro').parallax({
+        bleed: '50',
+    });
+
     $('.slider-1').owlCarousel({
         loop:true,
         nav: true,
@@ -145,15 +149,6 @@ $(document).ready(function(){
 
     $(".tagline-img").twentytwenty();
 
-
-
-
-
-
-
-
-
-
     $(window).scroll(function() {
         if($(this).scrollTop() > 100) {
             $('.mnu-line').addClass('sticky');
@@ -165,9 +160,6 @@ $(document).ready(function(){
             $('#page-container').addClass('spaced');
         }
     });
-
-
-
 
     /** PARALLAX */
     (function() {
@@ -340,4 +332,18 @@ $(document).ready(function(){
     /**
      * toTop functionality end
      */
+
+    /** animations start */
+    function animateTypicItems($item, $firstDelay, $timeoutDelay){
+        $item.each(function(){
+            $(this).attr("data-wow-delay", $firstDelay + "s");
+            $firstDelay += $timeoutDelay;
+        });
+    }
+
+    animateTypicItems($('.color-item'), 1, 0.2);
+    animateTypicItems($('.graph-item-img'), 0.5, 0.5);
+    animateTypicItems($('.graph-item-desc .graph-item-level'), 2, 0.3);
+
+    new WOW().init();
 });

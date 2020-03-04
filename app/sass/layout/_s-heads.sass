@@ -1,5 +1,6 @@
 .s-heads
   font-size: 21px
+  overflow: hidden
 
 .heads-wrap
   position: relative
@@ -24,9 +25,23 @@
 
 .heads-img
   width: calc(100% - 480px)
-  img
-    margin-left: auto
-    margin-right: auto
+  position: relative
+  &-1
+    position: absolute
+    z-index: 2
+    top: 0
+    left: 70px
+  &-2
+    position: absolute
+    z-index: 3
+    top: 0
+    left: 149px
+  &-3
+    position: absolute
+    z-index: 4
+    top: 0
+    left: 292px
+
 
 .heads-circle
   width: 82px
